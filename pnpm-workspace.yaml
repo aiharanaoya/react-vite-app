@@ -1,2 +1,5 @@
 saveExact: true
 pmOnFail: download
+allowBuilds:
+  "@swc/core": true
+  esbuild: true
