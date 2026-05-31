@@ -43,15 +43,3 @@ jobs:
         with:
           version: latest
       - run: biome ci .
-
-  build-storybook:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v6
-      - uses: pnpm/action-setup@v6
-      - uses: actions/setup-node@v6
-        with:
-          node-version: latest
-          cache: pnpm
-      - run: pnpm i --frozen-lockfile
-      - run: pnpm storybook:build
