@@ -20,7 +20,10 @@ jobs:
         with:
           node-version: latest
           cache: pnpm
+          registry-url: 'https://npm.pkg.github.com'
       - run: pnpm i --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm build
 
   test:
@@ -32,7 +35,10 @@ jobs:
         with:
           node-version: latest
           cache: pnpm
+          registry-url: 'https://npm.pkg.github.com'
       - run: pnpm i --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm test
 
   biome:
