@@ -1,7 +1,12 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
 	"files": {
-		"includes": ["**/*", "!**/dist"]
+		"includes": [
+			"**/*",
+			"!**/dist",
+			"!src/routeTree.gen.ts",
+			"!src/styles/global.css"
+		]
 	},
 	"linter": {
 		"rules": {
