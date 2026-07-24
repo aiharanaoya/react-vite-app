@@ -16,8 +16,8 @@
 		"@aiharanaoya/ui": "0.2.1",
 		"@tanstack/react-router": "1.170.18",
 		"lucide-react": "1.25.0",
-		"react": "19.2.7",
-		"react-dom": "19.2.7"
+		"react": "19.2.8",
+		"react-dom": "19.2.8"
 	},
 	"devDependencies": {
 		"@tanstack/router-plugin": "1.168.23",
