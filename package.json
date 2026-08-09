@@ -14,13 +14,13 @@
 	},
 	"dependencies": {
 		"@aiharanaoya/ui": "0.2.1",
-		"@tanstack/react-router": "1.170.19",
+		"@tanstack/react-router": "1.170.20",
 		"lucide-react": "1.28.0",
 		"react": "19.2.8",
 		"react-dom": "19.2.8"
 	},
 	"devDependencies": {
-		"@tanstack/router-plugin": "1.168.24",
+		"@tanstack/router-plugin": "1.168.25",
 		"@biomejs/biome": "2.5.7",
 		"@tailwindcss/vite": "4.3.3",
 		"@testing-library/jest-dom": "7.0.0",
