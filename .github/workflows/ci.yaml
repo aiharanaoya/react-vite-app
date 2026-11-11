@@ -18,9 +18,9 @@ jobs:
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v7
         with:
-          node-version: latest
+          node-version-file: .node-version
           cache: pnpm
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: "https://npm.pkg.github.com"
       - run: pnpm i --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -33,9 +33,9 @@ jobs:
       - uses: pnpm/action-setup@v6
       - uses: actions/setup-node@v7
         with:
-          node-version: latest
+          node-version-file: .node-version
           cache: pnpm
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: "https://npm.pkg.github.com"
       - run: pnpm i --frozen-lockfile
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -46,6 +46,4 @@ jobs:
     steps:
       - uses: actions/checkout@v7
       - uses: biomejs/setup-biome@v2
-        with:
-          version: latest
       - run: biome ci .
